@@ -40,7 +40,7 @@ llm = ChatGroq(
 
 #test = db.run_no_throw(updata_inventario.format(cantidad=100, product_name="Huevos"))
 
-def _fetch_inventory_from_db_internal() -> List[Dict]:
+def _fetch_inventory_from_db_internal(type=None) -> List[Dict]:
     """
     Función interna para obtener y parsear el inventario directamente de la DB.
     Devuelve una lista de diccionarios.
@@ -88,8 +88,14 @@ def _fetch_inventory_from_db_internal() -> List[Dict]:
         except Exception as e:
             print(f"Error procesando fila {row}: {e}")
 
+    result = list(\
+        filter(
+            lambda x: x.get("fecha_vencimiento") is None or datetime.datetime.fromisoformat(x.get("fecha_vencimiento")) > datetime.datetime.now(), result
+        )
+    ) #filtro vencido
+    result = list(filter(lambda x: x.get("cantidad") > 0, result)) #filtro cantidad
+    result = list(filter(lambda x: type in x.get("type")), result) #filtro tipo de receta
 
-    result = list(filter(lambda x: x["cantidad"] > 0, result))
     return result
 
 @tool
@@ -101,30 +107,6 @@ def get_ingredients() -> str:
     # Devuelve el resultado como string, que es lo que suelen manejar mejor las tools
     return json.dumps(inventory_list)
 
-@tool
-def update_inventory(productos:List[Tuple[int,int]]) -> str:
-    """
-    Actualiza el inventario restando la cantidad de un producto.
-    recibe el id_producto y la cantidad a restar.
-    si el id_producto de huevos es 1 y se usanron 2 unidades, se debe llamar a la función así:
-    update_inventory([1, 2])
-    si se quiere actualizar varios productos, se puede llamar así:
-    update_inventory([(1, 2), (2, 3)])
-    siempre con valores positivos.
-    """
-    updata_inventario = """
-        UPDATE inventario
-        SET cantidad = {cantidad}
-        WHERE id_producto = {id_producto};
-    """
-    try:
-        for id_producto, cantidad in productos:
-            db.run_no_throw(updata_inventario.format(cantidad=cantidad, id_producto=id_producto))
-            print("cantidad: ", cantidad)
-            print("id_producto: ", id_producto)
-        return f"Inventario actualizado: {cantidad} {id_producto} restados."
-    except Exception as e:
-        return f"Error al actualizar el inventario: {e}"
 
 # msj = [("system", SYS.format(ingredients=json.dumps(result, indent=2, default=list)))]
 
@@ -132,7 +114,7 @@ prompt = PromptTemplate.from_template(
     template=SYS
 )
 
-tools = [get_ingredients, update_inventory]
+tools = [get_ingredients]
 agent = create_react_agent(llm, tools=tools, prompt=SYS)
 
 def graph():
