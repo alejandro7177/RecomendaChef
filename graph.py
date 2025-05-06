@@ -93,13 +93,13 @@ def _fetch_inventory_from_db_internal(type=None) -> List[Dict]:
 @tool
 def get_recetas(
     tipo:Literal["vegetariano","vegano","normal","celiaco"] = "normal",
-    complejidad: Literal["facil", "normal", "dificil"]= "normal"
+    complejidad: Literal["facil", "normal", "Dificil"]= "normal"
     ) -> List:
     """
     Args:
         tipo: Tipo de recetas que se necesita de filtro para traer las recetas relevantes los tipos de recetas son ["vegetariano","vegano","normal","celiaco"] por defecto es normal que incluye todo
 
-        complejidad: Complejidad de receta de la receta puede ser ["facil", "normal", "dificil"] por defecto es normal que incluye
+        complejidad: Complejidad de receta de la receta puede ser ["facil", "normal", "Dificil"] por defecto es normal que incluye
 
     """
     def calcular_puntos_disponibilidad(row, inventario_ids):
@@ -149,8 +149,8 @@ def get_recetas(
         df.loc[df["complejidad"]=="normal", 'score'] += 5
         df.loc[df["complejidad"]=="facil", 'score'] += 5
 
-    elif complejidad=="dificil":
-        df.loc[df["complejidad"]=="dificil", 'score'] += 7
+    elif complejidad=="Dificil":
+        df.loc[df["complejidad"]=="Dificil", 'score'] += 7
         df.loc[df["complejidad"]=="normal", 'score'] += 2
 
 
