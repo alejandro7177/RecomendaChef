@@ -1,0 +1,659 @@
+[
+    {
+      "id": 1,
+      "Nombre de la receta": "Pollo al Horno Simple",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Cebolla", "id": 9}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Precalentar horno a 180°C. 2. Cortar la cebolla en juliana o rodajas. 3. Colocar las piezas de pollo en una fuente para horno. 4. Sazonar generosamente con sal. 5. Rociar el pollo y la fuente con aceite. 6. Distribuir la cebolla sobre o alrededor del pollo. 7. Hornear durante 45-60 minutos, o hasta que el pollo esté dorado y bien cocido por dentro."
+    },
+    {
+      "id": 2,
+      "Nombre de la receta": "Arroz Blanco Básico",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Opcional: Enjuagar 1 taza de arroz bajo agua fría. 2. Calentar 1 cucharada de aceite en una olla a fuego medio. 3. Añadir el arroz (y sofreír 1 minuto si se desea). 4. Agregar 2 tazas de agua y sal al gusto. 5. Llevar a ebullición. 6. Reducir el fuego al mínimo, tapar la olla y cocinar por 15-20 minutos sin destapar, hasta que el agua se haya absorbido completamente. 7. Dejar reposar tapado 5 minutos antes de servir."
+    },
+    {
+      "id": 3,
+      "Nombre de la receta": "Fideos con Manteca y Queso",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Fideos", "id": 12},
+        {"producto": "Manteca", "id": 7},
+        {"producto": "Queso rallado", "id": 8},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Hervir abundante agua con sal en una olla grande. 2. Cocinar los fideos según las instrucciones del paquete hasta que estén al dente. 3. Escurrir los fideos. 4. Devolver los fideos a la olla caliente (fuera del fuego). 5. Agregar la manteca y remover hasta que se derrita y cubra los fideos. 6. Incorporar el queso rallado y mezclar bien. 7. Servir inmediatamente."
+    },
+    {
+      "id": 4,
+      "Nombre de la receta": "Huevos Revueltos Cremosos",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Batir 2 huevos en un bol. 2. Añadir un chorrito de leche y sal al gusto. Batir ligeramente. 3. Calentar un poco de aceite en una sartén a fuego medio-bajo. 4. Verter la mezcla de huevo en la sartén caliente. 5. Cocinar removiendo suavemente con una espátula, llevando los bordes cocidos hacia el centro, hasta que estén cocidos pero aún jugosos. 6. Retirar del fuego y servir."
+    },
+    {
+      "id": 5,
+      "Nombre de la receta": "Panqueques Clásicos",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Harina", "id": 3},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. En un bol, mezclar 1 taza de harina, 2 cucharadas de azúcar y una pizca de sal. 2. En otro bol, batir 1 huevo con 1 taza de leche y 2 cucharadas de aceite derretido (o manteca derretida, id: 7). 3. Verter los ingredientes líquidos sobre los secos y mezclar solo hasta combinar (no batir en exceso). 4. Calentar una sartén ligeramente engrasada a fuego medio. 5. Verter un cucharón pequeño de masa por cada panqueque. 6. Cocinar unos 2 minutos por lado, o hasta que aparezcan burbujas y los bordes estén secos, luego voltear y cocinar el otro lado hasta dorar. 7. Repetir con el resto de la masa."
+    },
+    {
+      "id": 6,
+      "Nombre de la receta": "Ensalada Fresca de Tomate y Cebolla",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Lavar y cortar los tomates en rodajas o gajos. 2. Pelar y cortar la cebolla en juliana fina (o en aros finos). Opcional: remojar la cebolla en agua fría unos minutos para suavizar el sabor. 3. Colocar el tomate y la cebolla en un plato o bol. 4. Aliñar con aceite y sal al gusto justo antes de servir. 5. Mezclar suavemente."
+    },
+    {
+      "id": 7,
+      "Nombre de la receta": "Milanesa de Pollo Frita",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Pan Rallado", "id": 0},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cortar filetes finos de pechuga de pollo. Aplanar ligeramente si son gruesos. 2. Batir 1 o 2 huevos en un plato hondo con una pizca de sal. 3. Colocar pan rallado (id: 0) en otro plato. 4. Sazonar los filetes de pollo con sal. 5. Pasar cada filete primero por el huevo batido, asegurando que se cubra bien. 6. Luego, pasar el filete por el pan rallado, presionando para que se adhiera. 7. Calentar abundante aceite en una sartén a fuego medio-alto. 8. Freír las milanesas por unos 3-4 minutos por lado, o hasta que estén doradas y cocidas. 9. Retirar y escurrir sobre papel absorbente."
+    },
+    {
+      "id": 8,
+      "Nombre de la receta": "Licuado de Banana y Leche",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Banana", "id": 15},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Pelar 1 o 2 bananas maduras y trocearlas. 2. Colocar la banana troceada en una licuadora. 3. Añadir 1 taza de leche fría. 4. Agregar azúcar al gusto (empezar con 1 cucharadita). 5. Licuar todo hasta obtener una mezcla homogénea y suave. 6. Servir inmediatamente."
+    },
+    {
+      "id": 9,
+      "Nombre de la receta": "Arroz Blanco con Huevo Frito",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Preparar arroz blanco básico (ver receta ID 2). 2. Mientras el arroz reposa, calentar suficiente aceite en una sartén pequeña a fuego medio-alto. 3. Cascar un huevo con cuidado en la sartén caliente. 4. Freír el huevo hasta que la clara esté cocida y los bordes crujientes, y la yema a tu gusto (líquida o cocida). Sazonar con sal. 5. Servir una porción de arroz blanco en un plato. 6. Colocar el huevo frito encima del arroz."
+    },
+    {
+      "id": 10,
+      "Nombre de la receta": "Salsa de Tomate Casera Rápida",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Picar finamente media cebolla. 2. Triturar 2-3 tomates maduros (o usar tomate triturado en lata, id: 0). 3. Calentar un chorro de aceite en una sartén u olla a fuego medio. 4. Sofreír la cebolla picada hasta que esté transparente (unos 5 minutos). 5. Añadir el tomate triturado, sal al gusto y una pizca de azúcar (para contrarrestar la acidez). 6. Cocinar a fuego bajo, removiendo ocasionalmente, durante 15-20 minutos, o hasta que la salsa espese ligeramente. 7. Ajustar de sal si es necesario."
+    },
+    {
+      "id": 11,
+      "Nombre de la receta": "Tiras de Pollo Salteadas con Cebolla",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Cortar una pechuga de pollo en tiras finas. 2. Cortar media cebolla en juliana. 3. Calentar un poco de aceite en una sartén o wok a fuego alto. 4. Añadir las tiras de pollo y saltear hasta que cambien de color y estén casi cocidas. Sazonar con sal. 5. Agregar la cebolla en juliana y continuar salteando todo junto por 3-5 minutos más, hasta que la cebolla esté tierna y el pollo completamente cocido. 6. Servir caliente."
+    },
+    {
+      "id": 12,
+      "Nombre de la receta": "Tortilla de Huevo y Cebolla",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Picar finamente media cebolla. 2. Calentar un poco de aceite en una sartén a fuego medio-bajo y pochar la cebolla lentamente hasta que esté muy tierna y transparente (unos 10 minutos). 3. Batir 3 huevos en un bol con sal al gusto. 4. Añadir la cebolla pochada (escurrida del exceso de aceite) a los huevos batidos y mezclar. 5. Calentar un poco más de aceite en la misma sartén (limpia si es necesario) a fuego medio. 6. Verter la mezcla de huevo y cebolla. 7. Cocinar hasta que los bordes estén cuajados. Con la ayuda de un plato, dar la vuelta a la tortilla y cocinar por el otro lado hasta que esté dorada y cuajada al gusto. 8. Deslizar a un plato y servir."
+    },
+    {
+      "id": 13,
+      "Nombre de la receta": "Masa Quebrada Salada (Base)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Harina", "id": 3},
+        {"producto": "Manteca", "id": 7},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. En un bol, poner 200g de harina y una pizca de sal. 2. Añadir 100g de manteca fría cortada en cubitos. 3. Con las yemas de los dedos, integrar la manteca en la harina hasta obtener una textura arenosa. 4. Agregar 3-4 cucharadas de agua muy fría, poco a poco, mezclando hasta que la masa se una (sin amasar en exceso). 5. Formar una bola, envolver en film transparente y refrigerar al menos 30 minutos antes de usar."
+    },
+    {
+      "id": 14,
+      "Nombre de la receta": "Fideos con Salsa de Tomate Fresca",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Fideos", "id": 12},
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Preparar la salsa de tomate casera rápida (ver receta ID 10). 2. Mientras la salsa se cocina, hervir abundante agua con sal y cocinar los fideos según el paquete. 3. Escurrir los fideos. 4. Mezclar los fideos escurridos con la salsa de tomate caliente. 5. Servir inmediatamente."
+    },
+    {
+      "id": 15,
+      "Nombre de la receta": "Pechuga de Pollo a la Plancha con Arroz",
+      "tipo": "bajo en calorías",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Preparar arroz blanco básico (ver receta ID 2). 2. Cortar una pechuga de pollo en filetes. Sazonar con sal. 3. Calentar una plancha o sartén antiadherente con una mínima cantidad de aceite a fuego medio-alto. 4. Cocinar los filetes de pollo unos 3-5 minutos por cada lado, hasta que estén dorados y bien cocidos por dentro. 5. Servir los filetes de pollo junto a una porción de arroz blanco."
+    },
+    {
+      "id": 16,
+      "Nombre de la receta": "Compota Rápida de Banana",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Banana", "id": 15},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Pelar 2 bananas maduras y cortarlas en rodajas. 2. Colocar las rodajas de banana en una cacerola pequeña. 3. Añadir 1-2 cucharadas de azúcar (al gusto) y un chorrito muy pequeño de agua (1-2 cucharadas). 4. Cocinar a fuego bajo, removiendo, durante 5-10 minutos, hasta que la banana se ablande y forme una compota. 5. Dejar enfriar antes de servir."
+    },
+    {
+      "id": 17,
+      "Nombre de la receta": "Crema Pastelera Microondas Fácil",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Leche", "id": 2},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Harina", "id": 3}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. En un bol apto para microondas, mezclar 2 yemas de huevo con 50g de azúcar hasta blanquear. 2. Incorporar 20g de harina (o Maicena id:0 para versión sin gluten) y mezclar bien. 3. Añadir 250ml de leche poco a poco, mezclando para evitar grumos. 4. Cocinar en el microondas a máxima potencia en intervalos de 1 minuto, removiendo bien después de cada intervalo, hasta que la crema espese (aprox. 3-5 minutos total). 5. Opcional: Añadir esencia de vainilla (id:0) al final. 6. Cubrir con film tocando la superficie para que no forme costra y dejar enfriar."
+    },
+    {
+      "id": 18,
+      "Nombre de la receta": "Cebolla Pochada Lenta",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Pelar y cortar 1-2 cebollas en juliana fina. 2. Calentar una cantidad generosa de aceite en una sartén a fuego muy bajo. 3. Añadir la cebolla y una pizca de sal. 4. Cocinar muy lentamente, removiendo ocasionalmente, durante 20-30 minutos o más, hasta que la cebolla esté muy blanda, translúcida y ligeramente dorada (sin quemarse). 5. Usar como base para otras preparaciones o como acompañamiento."
+    },
+    {
+      "id": 19,
+      "Nombre de la receta": "Tortilla Francesa Simple con Queso",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Queso rallado", "id": 8},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Batir 2 huevos en un bol con una pizca de sal. 2. Calentar un poco de aceite o manteca (id: 7) en una sartén antiadherente a fuego medio. 3. Verter los huevos batidos en la sartén caliente, inclinándola para cubrir el fondo. 4. Cuando los huevos empiecen a cuajar, espolvorear queso rallado sobre una mitad. 5. Doblar la tortilla por la mitad con la ayuda de una espátula. 6. Cocinar 30 segundos más o hasta que el queso se derrita. 7. Deslizar a un plato y servir."
+    },
+    {
+      "id": 20,
+      "Nombre de la receta": "Arroz con Leche Clásico",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Poner 100g de arroz (idealmente de grano redondo) en una olla con 500ml de leche, 75g de azúcar y una pizca de sal. 2. Opcional: añadir una rama de canela o piel de limón (id:0). 3. Llevar a ebullición a fuego medio, luego reducir a fuego muy bajo. 4. Cocinar lentamente, removiendo frecuentemente para que no se pegue, durante 40-50 minutos, o hasta que el arroz esté tierno y la mezcla cremosa. 5. Retirar opcionales (canela/limón). 6. Dejar enfriar. Se puede servir tibio o frío."
+    },
+    {
+      "id": 21,
+      "Nombre de la receta": "Tomates Rellenos de Arroz y Huevo",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cocinar 1/2 taza de arroz blanco (ver ID 2) y dejar enfriar. 2. Cocinar 1 huevo hasta que esté duro (huevo duro), pelar y picar finamente. 3. Lavar 2-3 tomates grandes y cortarles la parte superior (reservar como tapa). Vaciar cuidadosamente la pulpa con una cuchara. Picar parte de la pulpa. 4. En un bol, mezclar el arroz cocido frío, el huevo duro picado, la pulpa de tomate picada, sal y un chorrito de aceite (o Mayonesa id:0 si se tiene). 5. Rellenar los tomates con esta mezcla. 6. Opcional: colocar la tapa. Servir fríos."
+    },
+    {
+      "id": 22,
+      "Nombre de la receta": "Tortitas de Banana y Harina",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Banana", "id": 15},
+        {"producto": "Harina", "id": 3},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Machacar 1 banana madura en un bol. 2. Añadir 1 huevo, 2 cucharadas de azúcar y un chorrito de leche. Mezclar. 3. Incorporar 1/2 taza de harina tamizada y mezclar hasta obtener una masa espesa. 4. Calentar aceite en una sartén a fuego medio. 5. Verter cucharadas de la mezcla en la sartén caliente. 6. Freír las tortitas por ambos lados hasta que estén doradas. 7. Escurrir sobre papel absorbente. Opcional: espolvorear con azúcar."
+    },
+    {
+      "id": 23,
+      "Nombre de la receta": "Caldo de Pollo Básico",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Colocar trozos de pollo (carcasa, alitas, etc.) en una olla grande. 2. Añadir media cebolla pelada. 3. Cubrir con abundante agua fría. 4. Llevar a ebullición a fuego alto. 5. Espumar: retirar la espuma que sube a la superficie durante los primeros minutos. 6. Reducir el fuego al mínimo, tapar parcialmente y cocinar a fuego lento durante al menos 1 hora (o más para más sabor). 7. Sazonar con sal hacia el final de la cocción. 8. Colar el caldo antes de usar."
+    },
+    {
+      "id": 24,
+      "Nombre de la receta": "Leche Tibia Endulzada",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Leche", "id": 2},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Verter la cantidad deseada de leche en una cacerola pequeña o en una taza apta para microondas. 2. Calentar suavemente en la hornalla a fuego bajo o en el microondas, sin que llegue a hervir. 3. Añadir azúcar al gusto y remover hasta disolver. 4. Servir tibia."
+    },
+    {
+      "id": 25,
+      "Nombre de la receta": "Engrudo (Harina y Agua)",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Harina", "id": 3},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Mezclar una pequeña cantidad de harina (ej. 2 cucharadas) con una pizca de sal en un bol pequeño. 2. Añadir agua fría poco a poco, removiendo constantemente, hasta formar una pasta suave y sin grumos. 3. Se puede usar frío como pegamento comestible o cocinar a fuego bajo removiendo hasta que espese para usar como base de salsas blancas simples (bechamel vegana básica)."
+    },
+    {
+      "id": 26,
+      "Nombre de la receta": "Fideos Salteados con Ajo y Cebolla",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Fideos", "id": 12},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Ajo", "id": 0}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Cocinar los fideos según el paquete y escurrir. 2. Mientras, picar finamente 1 diente de ajo (id:0) y media cebolla. 3. Calentar aceite en una sartén grande a fuego medio. 4. Sofreír el ajo y la cebolla hasta que estén tiernos y fragantes. 5. Añadir los fideos cocidos a la sartén. 6. Saltear todo junto durante un par de minutos, mezclando bien. 7. Sazonar con sal al gusto. Servir caliente."
+    },
+    {
+      "id": 27,
+      "Nombre de la receta": "Pollo al Ajillo Express",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Ajo", "id": 0}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cortar una pechuga de pollo en trozos o filetes. 2. Picar finamente 2-3 dientes de ajo (id:0). 3. Calentar una buena cantidad de aceite en una sartén a fuego medio-alto. 4. Dorar los trozos de pollo por todos lados. Sazonar con sal. 5. Bajar el fuego a medio-bajo, añadir el ajo picado y cocinar con cuidado de que no se queme, removiendo, durante 1-2 minutos hasta que esté fragante. 6. Opcional: añadir un chorrito de vino blanco (id:0) y dejar evaporar. 7. Terminar de cocinar el pollo. Servir caliente."
+    },
+    {
+      "id": 28,
+      "Nombre de la receta": "Arroz Frito Tres Delicias (Muy Simplificado)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Usar arroz blanco cocido del día anterior (frío). 2. Picar finamente media cebolla. 3. Batir 1 huevo con una pizca de sal. Hacer una tortilla francesa fina (ver ID 19), enrollarla y cortarla en tiras finas. Reservar. 4. Calentar aceite en una sartén grande o wok a fuego alto. 5. Saltear la cebolla picada hasta que esté tierna. 6. Añadir el arroz frío y desmenuzarlo, salteando y mezclando bien durante unos minutos. 7. Incorporar las tiras de tortilla. 8. Sazonar con sal (y opcionalmente salsa de soja id:0). Mezclar bien y servir caliente."
+    },
+    {
+      "id": 29,
+      "Nombre de la receta": "Rodajas de Banana Frita Dulce",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Banana", "id": 15},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Pelar 1-2 bananas (preferiblemente no demasiado maduras) y cortarlas en rodajas de 1 cm de grosor. 2. Calentar aceite en una sartén a fuego medio. 3. Freír las rodajas de banana por ambos lados hasta que estén doradas. 4. Retirar y escurrir sobre papel absorbente. 5. Espolvorear con azúcar mientras están calientes. Servir como postre o acompañamiento."
+    },
+    {
+      "id": 30,
+      "Nombre de la receta": "Bizcocho Básico de Manteca",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Harina", "id": 3},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Manteca", "id": 7},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Precalentar horno a 170°C. Engrasar y enharinar un molde. 2. Batir 100g de manteca a temperatura ambiente con 100g de azúcar hasta obtener una crema. 3. Añadir 2 huevos, uno a uno, batiendo bien después de cada adición. 4. Tamizar 150g de harina con una pizca de sal. 5. Incorporar la harina a la mezcla anterior alternando con 50ml de leche, empezando y terminando con harina. Mezclar lo justo. 6. Verter la masa en el molde preparado. 7. Hornear durante 30-40 minutos, o hasta que al insertar un palillo, éste salga limpio. 8. Dejar enfriar antes de desmoldar."
+    },
+    {
+      "id": 31,
+      "Nombre de la receta": "Guiso Rápido de Pollo, Arroz y Tomate",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cortar el pollo en trozos pequeños. Picar la cebolla y el tomate. 2. Calentar aceite en una olla. Dorar los trozos de pollo. Retirar y reservar. 3. En la misma olla, sofreír la cebolla hasta que esté transparente. 4. Añadir el tomate picado y cocinar unos minutos. 5. Incorporar 1 taza de arroz y remover. 6. Volver a poner el pollo en la olla. 7. Añadir 2 tazas de agua o caldo (id:0), sal al gusto. 8. Llevar a ebullición, luego bajar el fuego, tapar y cocinar unos 20 minutos o hasta que el arroz y el pollo estén cocidos y el líquido se haya absorbido."
+    },
+    {
+      "id": 32,
+      "Nombre de la receta": "Pasta de Fideos Rota con Huevo",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Fideos", "id": 12},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Romper fideos finos (tipo cabello de ángel) en trozos pequeños. 2. Calentar aceite en una sartén. Tostar los fideos rotos hasta que estén dorados. 3. Añadir agua suficiente para cubrir apenas los fideos y sal. Cocinar hasta que el agua se evapore y los fideos estén tiernos. 4. Hacer un hueco en el centro y cascar 1-2 huevos. 5. Remover rápidamente para que el huevo se mezcle y cocine con los fideos. 6. Servir caliente."
+    },
+    {
+      "id": 33,
+      "Nombre de la receta": "Leche Frita (Versión Simple)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Leche", "id": 2},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Harina", "id": 3},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "Dificil",
+      "receta": "1. Calentar 500ml de leche con 100g de azúcar (reservar un poco de leche fría). 2. Disolver 50g de harina (o maicena id:0) en la leche fría reservada. 3. Cuando la leche caliente esté a punto de hervir, retirar del fuego y añadir la mezcla de harina, removiendo bien. 4. Volver a poner a fuego bajo y cocinar sin dejar de remover hasta que espese mucho. 5. Verter en una fuente rectangular baja, alisar y dejar enfriar completamente (mejor de un día para otro en la nevera). 6. Cortar la masa fría en porciones. 7. Pasar cada porción por harina y huevo batido. 8. Freír en abundante aceite caliente hasta dorar. 9. Escurrir y rebozar en azúcar (opcionalmente mezclada con canela id:0)."
+    },
+    {
+      "id": 34,
+      "Nombre de la receta": "Queso Rallado Tostado (Snack)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Queso rallado", "id": 8}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Precalentar horno a 180°C o calentar una sartén antiadherente a fuego medio. 2. Si usa horno: Extender pequeñas montañitas de queso rallado separadas entre sí sobre papel de horno en una bandeja. Hornear 5-8 minutos hasta que se derrita y dore. 3. Si usa sartén: Colocar pequeñas montañitas de queso rallado en la sartén caliente. Cocinar hasta que se derrita, dore y esté crujiente por abajo. Dar la vuelta con cuidado si se desea. 4. Dejar enfriar sobre papel absorbente hasta que estén crujientes."
+    },
+    {
+      "id": 35,
+      "Nombre de la receta": "Agua de Arroz (Bebida)",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Hervir 1/4 taza de arroz en 1 litro de agua durante 20-30 minutos. 2. Colar el líquido (el agua de arroz). Descartar el arroz o usar para otra cosa. 3. Endulzar el agua de arroz con azúcar al gusto mientras está caliente. 4. Opcional: añadir canela (id:0) o limón (id:0). 5. Dejar enfriar completamente antes de beber. Se sirve fría."
+    },
+    {
+      "id": 36,
+      "Nombre de la receta": "Pollo Rebozado Simple",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Harina", "id": 3},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cortar el pollo en trozos o tiras. Sazonar con sal. 2. Preparar tres platos: uno con harina, otro con 1-2 huevos batidos, y nada en el tercero (o pan rallado id:0 si se quiere doble rebozado). 3. Pasar cada trozo de pollo primero por harina (sacudir exceso), luego por huevo batido, y opcionalmente de nuevo por harina o pan rallado. 4. Calentar abundante aceite en una sartén. 5. Freír los trozos de pollo rebozados hasta que estén dorados y cocidos por dentro. 6. Escurrir sobre papel absorbente."
+    },
+    {
+      "id": 37,
+      "Nombre de la receta": "Batido Energético de Banana y Huevo",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Banana", "id": 15},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Colocar en una licuadora: 1 banana troceada, 1 huevo crudo (asegurarse de que sea fresco y de fuente confiable), 1/2 taza de leche y azúcar al gusto. 2. Licuar todo a alta velocidad hasta que esté completamente homogéneo y espumoso. 3. Servir inmediatamente. (Nota: el consumo de huevo crudo conlleva riesgos)."
+    },
+    {
+      "id": 38,
+      "Nombre de la receta": "Fideos Chinos (Imitación Muy Básica)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Fideos", "id": 12},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cocinar los fideos (preferiblemente tipo spaghetti o similar) al dente, escurrir y reservar (rociar con un poco de aceite para que no se peguen). 2. Cortar la cebolla en juliana fina. 3. Batir 1 huevo. Calentar un poco de aceite en sartén/wok, hacer una tortilla fina, enrollar y cortar en tiras. Reservar. 4. Calentar más aceite en el wok a fuego alto. Saltear la cebolla hasta que esté tierna pero crujiente. 5. Añadir los fideos cocidos y saltear vigorosamente. 6. Incorporar las tiras de tortilla. 7. Sazonar con sal (y opcionalmente salsa de soja id:0). Mezclar bien y servir."
+    },
+    {
+      "id": 39,
+      "Nombre de la receta": "Sopa de Arroz y Pollo Desmenuzado",
+      "tipo": "normal",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Preparar caldo de pollo básico (ver ID 23) usando trozos de pollo. 2. Retirar el pollo del caldo cocido y desmenuzarlo. 3. Colar el caldo. 4. Volver a poner el caldo colado en la olla. Añadir 1/4 taza de arroz y media cebolla picada fina (opcional). 5. Cocinar a fuego medio-bajo hasta que el arroz esté tierno (unos 15-20 minutos). 6. Incorporar el pollo desmenuzado al final. 7. Ajustar de sal y servir caliente."
+    },
+    {
+      "id": 40,
+      "Nombre de la receta": "Crema Dulce de Harina Tostada",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Harina", "id": 3},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Manteca", "id": 7}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. En una sartén sin grasa, tostar 3 cucharadas de harina a fuego bajo, removiendo constantemente, hasta que tome un ligero color dorado y huela a nuez (cuidado que no se queme). 2. Aparte, calentar 500ml de leche con 3-4 cucharadas de azúcar y 1 cucharada de manteca. 3. Retirar la leche del fuego justo antes de hervir. 4. Incorporar la harina tostada poco a poco a la leche caliente, batiendo enérgicamente con varillas para evitar grumos. 5. Volver a poner a fuego bajo y cocinar, sin dejar de remover, hasta que espese a la consistencia deseada. 6. Servir caliente o fría."
+    },
+    {
+      "id": 41,
+      "Nombre de la receta": "Tomate Aliñado Simple",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Lavar 1-2 tomates y cortarlos en rodajas finas. 2. Disponer las rodajas en un plato. 3. Rociar generosamente con aceite de oliva (o el que se tenga). 4. Espolvorear con sal al gusto. 5. Dejar reposar 5 minutos antes de servir."
+    },
+    {
+      "id": 42,
+      "Nombre de la receta": "Cebolla Frita Crujiente",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Cebolla", "id": 9},
+        {"producto": "Harina", "id": 3},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Aceite", "id": 6}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Cortar 1 cebolla grande en aros o juliana fina. 2. Separar los aros/tiras. 3. En un bol, mezclar un poco de harina con sal. 4. Pasar la cebolla por la harina, asegurándose de que quede ligeramente cubierta (sacudir el exceso). 5. Calentar abundante aceite en una sartén a fuego medio-alto. 6. Freír la cebolla enharinada por tandas (sin amontonar) hasta que esté dorada y crujiente. 7. Retirar con espumadera y escurrir muy bien sobre papel absorbente. Usar como topping."
+    },
+    {
+      "id": 43,
+      "Nombre de la receta": "Huevo Duro Clásico",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Colocar los huevos en una cacerola y cubrirlos con agua fría (al menos 2 cm por encima). 2. Opcional: añadir una pizca de sal o un chorrito de vinagre al agua (ayuda a que no se rompan). 3. Llevar el agua a ebullición a fuego alto. 4. Una vez que hierva, bajar el fuego a medio-bajo y cocinar durante 9-12 minutos (9 para yema ligeramente cremosa, 12 para yema totalmente cocida). 5. Retirar los huevos del agua caliente y sumergirlos inmediatamente en agua muy fría con hielo para detener la cocción y facilitar el pelado. 6. Pelar una vez fríos."
+    },
+    {
+      "id": 44,
+      "Nombre de la receta": "Merengue Básico (Manual)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Dificil",
+      "receta": "1. Separar las claras de las yemas de 2 huevos (usar solo las claras, que deben estar a temperatura ambiente y sin restos de yema). 2. Poner las claras en un bol muy limpio y seco con una pizca de sal. 3. Batir enérgicamente con varillas (manuales o eléctricas) hasta que estén espumosas y formen picos suaves. 4. Añadir 100g de azúcar glas (o azúcar normal muy fina) cucharada a cucharada, sin dejar de batir, hasta que el merengue esté firme, brillante y forme picos duros. 5. Usar inmediatamente para hornear o decorar."
+    },
+    {
+      "id": 45,
+      "Nombre de la receta": "Bechamel Simple (Salsa Blanca)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Leche", "id": 2},
+        {"producto": "Harina", "id": 3},
+        {"producto": "Manteca", "id": 7},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Derretir 2 cucharadas de manteca en una cacerola a fuego bajo. 2. Añadir 2 cucharadas de harina y remover con varillas durante 1-2 minutos para cocinar la harina (roux). 3. Retirar del fuego y añadir 500ml de leche fría (o tibia) poco a poco, batiendo constantemente con las varillas para evitar grumos. 4. Volver a poner a fuego medio-bajo y cocinar, sin dejar de remover, hasta que la salsa espese. 5. Sazonar con sal (y opcionalmente pimienta o nuez moscada id:0). Cocinar 1-2 minutos más. Ajustar espesor con más leche si es necesario."
+    },
+    {
+      "id": 46,
+      "Nombre de la receta": "Pollo a la Sal",
+      "tipo": "bajo en calorías",
+      "productos necesarios": [
+        {"producto": "Pollo", "id": 1},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "Medio",
+      "receta": "1. Precalentar horno a 200°C. 2. Necesitarás aproximadamente 1 kg de sal gruesa por cada kg de pollo entero. 3. Limpiar bien el pollo entero por dentro y por fuera, secarlo. No añadir sal al pollo. 4. En una fuente de horno, poner una cama de sal gruesa de 1 cm de espesor. 5. Colocar el pollo encima de la cama de sal. 6. Cubrir completamente el pollo con el resto de la sal gruesa, presionando ligeramente para que quede bien sellado. 7. Hornear durante aproximadamente 1 hora y 15 minutos (o hasta que esté cocido, depende del tamaño). 8. Retirar del horno, romper la costra de sal con cuidado y extraer el pollo limpio. La piel se desecha. Servir la carne."
+    },
+    {
+      "id": 47,
+      "Nombre de la receta": "Arroz con Tomate Frito (de lata)",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Arroz", "id": 11},
+        {"producto": "Tomate", "id": 10},
+        {"producto": "Aceite", "id": 6},
+        {"producto": "Sal", "id": 5},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Preparar arroz blanco (ver ID 2). 2. Calentar tomate frito de lata (id:0) en una sartén o cacerola. Opcional: si es tomate triturado (id:10), sofreírlo con aceite, sal y pizca de azúcar hasta que pierda el agua. 3. Mezclar el arroz blanco cocido con el tomate frito caliente. 4. Servir."
+    },
+    {
+      "id": 48,
+      "Nombre de la receta": "Fideos con Huevo Batido (Stracciatella sencilla)",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Fideos", "id": 12},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Queso rallado", "id": 8},
+        {"producto": "Sal", "id": 5}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Cocinar fideos finos (tipo cabello de ángel o similar) en caldo de verduras o pollo (id:0) o agua con sal. 2. Mientras los fideos se cocinan, batir 1 huevo con 1 cucharada de queso rallado y una pizca de sal en un bol. 3. Cuando los fideos estén casi listos (al dente), verter el huevo batido lentamente en la olla, removiendo suavemente con un tenedor para formar 'hilos' de huevo cocido. 4. Cocinar 1 minuto más hasta que el huevo esté cuajado. 5. Servir inmediatamente."
+    },
+    {
+      "id": 49,
+      "Nombre de la receta": "Banana Asada",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Banana", "id": 15},
+        {"producto": "Azúcar", "id": 4}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Precalentar horno a 180°C. 2. Lavar 1 banana y hacerle un corte longitudinal profundo a lo largo, sin cortar la base. 3. Colocar la banana en una fuente de horno pequeña o sobre papel de aluminio. 4. Rellenar el corte con un poco de azúcar (y opcionalmente canela id:0). 5. Hornear durante 15-20 minutos, o hasta que la piel esté negra y la pulpa blanda. 6. Servir caliente, comiendo la pulpa con cuchara."
+    },
+    {
+      "id": 50,
+      "Nombre de la receta": "Tostadas Francesas Simples",
+      "tipo": "vegetariano",
+      "productos necesarios": [
+        {"producto": "Pan", "id": 0},
+        {"producto": "Leche", "id": 2},
+        {"producto": "Huevos", "id": 1},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Manteca", "id": 7}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Batir 1 huevo con 1/4 taza de leche y 1 cucharadita de azúcar en un plato hondo. 2. Remojar rebanadas de pan (preferiblemente del día anterior, id:0) en la mezcla, empapando ambos lados sin que se deshagan. 3. Derretir un poco de manteca o aceite (id:6) en una sartén a fuego medio. 4. Dorar las rebanadas de pan remojadas por ambos lados hasta que estén doradas. 5. Servir calientes, opcionalmente espolvoreadas con más azúcar o acompañadas de banana (id:15)."
+    },
+    {
+      "id": 100,
+      "Nombre de la receta": "Agua Saborizada (Base)",
+      "tipo": "vegano",
+      "productos necesarios": [
+        {"producto": "Agua", "id": 0},
+        {"producto": "Azúcar", "id": 4},
+        {"producto": "Fruta/Vegetal", "id": 0}
+      ],
+      "complejidad": "facil",
+      "receta": "1. Lavar y cortar la fruta o vegetal elegido (ej. rodajas de Tomate id:10, rodajas de Banana id:15, trozos de Cebolla id:9 - ¡experimental!). 2. Colocar en una jarra con agua fría. 3. Añadir azúcar al gusto si se desea. 4. Dejar reposar en la nevera al menos 30 minutos para que el agua tome sabor. 5. Servir fría."
+    }
+  ]

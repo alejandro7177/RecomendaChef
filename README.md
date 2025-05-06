@@ -96,9 +96,9 @@ Las contribuciones son bienvenidas. Para contribuir:
 
 ## Licencia 📄
 
-Este proyecto está licenciado bajo [incluir licencia aquí].
+Este proyecto está licenciado bajo Alejandro Enterprice.
 
 ---
 
-Desarrollado con ❤️ por [tu nombre/equipo]
+Desarrollado con ❤️ por Alejandro Rafael Gonzalez Coene
 

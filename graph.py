@@ -1,15 +1,14 @@
 import os
-import time
 import json
 import datetime
+import pandas as pd
 from decimal import Decimal
-from typing import List, Tuple, Dict
+from typing import List, Literal, Dict
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_community.utilities import SQLDatabase
-from langchain.prompts import PromptTemplate
 from langgraph.prebuilt import create_react_agent
-from langchain_core.messages import HumanMessage, BaseMessage
+from langchain_core.messages import BaseMessage
 from langchain.tools import tool
 from prompt import SYS
 
@@ -33,12 +32,6 @@ llm = ChatGroq(
     api_key=API_KEY,
     streaming=True,
 )
-
-#print("Sorted: ",result)
-
-#print(json.dumps(result, indent=2, default=list))
-
-#test = db.run_no_throw(updata_inventario.format(cantidad=100, product_name="Huevos"))
 
 def _fetch_inventory_from_db_internal(type=None) -> List[Dict]:
     """
@@ -94,52 +87,91 @@ def _fetch_inventory_from_db_internal(type=None) -> List[Dict]:
         )
     ) #filtro vencido
     result = list(filter(lambda x: x.get("cantidad") > 0, result)) #filtro cantidad
-    result = list(filter(lambda x: type in x.get("type")), result) #filtro tipo de receta
 
     return result
 
 @tool
-def get_ingredients() -> str:
+def get_recetas(
+    tipo:Literal["vegetariano","vegano","normal","celiaco"] = "normal",
+    complejidad: Literal["facil", "normal", "dificil"]= "normal"
+    ) -> List:
     """
-    Devuelve la lista de ingredientes disponibles en el inventario.
+    Args:
+        tipo: Tipo de recetas que se necesita de filtro para traer las recetas relevantes los tipos de recetas son ["vegetariano","vegano","normal","celiaco"] por defecto es normal que incluye todo
+
+        complejidad: Complejidad de receta de la receta puede ser ["facil", "normal", "dificil"] por defecto es normal que incluye
+
     """
+    def calcular_puntos_disponibilidad(row, inventario_ids):
+        """
+        Calcula cuántos IDs de productos necesarios en la fila
+        están presentes en el inventario_ids. Suma 1 punto por cada coincidencia.
+        """
+        productos_receta = row['productos necesarios']
+        puntos_por_disponibilidad = 0
+
+        if not isinstance(productos_receta, list): return 0
+
+        if not productos_receta: return 0
+
+        for producto_dict in productos_receta:
+            id_necesario = producto_dict.get('id')
+            if id_necesario is not None and id_necesario in inventario_ids:
+                puntos_por_disponibilidad += 1
+
+        return puntos_por_disponibilidad
+
     inventory_list = _fetch_inventory_from_db_internal()
-    # Devuelve el resultado como string, que es lo que suelen manejar mejor las tools
-    return json.dumps(inventory_list)
+
+    df = pd.read_json("recetas.json")
+    df["score"] = 0
+
+    if tipo == "vegetariano":
+        df.loc[df["tipo"]=="vegetariano", 'score'] += 10
+        df.loc[df["tipo"]=="vegano", 'score'] += 10
+
+    elif tipo == "vegano":
+        df.loc[df["tipo"]=="vegano", 'score'] += 10
+
+    elif tipo=="celiaco":
+        df.loc[df["tipo"]=="celiaco", 'score'] += 10
+
+    elif tipo=="normal":
+        df.loc[df["tipo"]=="normal", 'score'] += 10
+        df.loc[df["tipo"]=="vegetariano", 'score'] += 10
+        df.loc[df["tipo"]=="vegano", 'score'] += 10
+        df.loc[df["tipo"]=="celiaco", 'score'] += 10
+    
+    if complejidad=="facil":
+        df.loc[df["complejidad"]=="facil", 'score'] += 5
+
+    elif complejidad=="normal":
+        df.loc[df["complejidad"]=="normal", 'score'] += 5
+        df.loc[df["complejidad"]=="facil", 'score'] += 5
+
+    elif complejidad=="dificil":
+        df.loc[df["complejidad"]=="dificil", 'score'] += 7
+        df.loc[df["complejidad"]=="normal", 'score'] += 2
 
 
-# msj = [("system", SYS.format(ingredients=json.dumps(result, indent=2, default=list)))]
+    #Se hace un primer puntuado de las recetas 20 recetas
+    df = df.sort_values(by="score", ascending=False).head(20)
 
-prompt = PromptTemplate.from_template(
-    template=SYS
-)
+    puntos_disponibilidad = df.apply(
+        calcular_puntos_disponibilidad,
+        axis=1, 
+        inventario_ids=[i.get("id") for i in inventory_list]
+    )
+    
+    df["score"] = df["score"] + puntos_disponibilidad
 
-tools = [get_ingredients]
+    df = df.sort_values(by="score", ascending=False).head(3)
+
+    return json.dumps(df.to_dict("records"), indent=2)
+
+tools = [get_recetas]
 agent = create_react_agent(llm, tools=tools, prompt=SYS)
 
-def graph():
-    try:
-        print("Intentando generar gráfico del agente con Mermaid...")
-
-        # Llama al método directamente sobre tu objeto 'agent'
-        # (LangGraph a menudo permite esto en los objetos compilados)
-        png_bytes = agent.get_graph().draw_mermaid_png() # <--- Llamada sobre tu 'agent'
-
-        # Guarda los bytes en un archivo PNG
-        with open("mi_agente_graph.png", "wb") as f:
-            f.write(png_bytes)
-        print("¡Gráfico del agente guardado como mi_agente_graph.png!")
-
-    except AttributeError:
-        print("Error: Parece que el objeto 'agent' devuelto por create_react_agent")
-        print("no tiene directamente el método 'draw_mermaid_png'.")
-        print("Podrías necesitar construir el grafo manualmente con StateGraph para visualizarlo así,")
-        print("o buscar si expone un método como 'get_graph()' y llamar .draw_mermaid_png() sobre eso.")
-    except ImportError:
-        print("Error: Faltan dependencias para generar el gráfico con Mermaid.")
-        print("Intenta instalar playwright: pip install playwright && playwright install")
-    except Exception as e:
-        print(f"Error inesperado al generar o guardar el gráfico: {e}")
 
 class Orquetador:
     def invoke_agents(self, mjs:List[BaseMessage]) -> str:
@@ -184,3 +216,9 @@ class Orquetador:
         except Exception as e:
             print(f"Error al actualizar el inventario: {e}")
             return False
+        
+if __name__ == "__main__":
+    input_data = {"tipo": "vegetariano", "complejidad": "normal"}
+    result = get_recetas.invoke(input_data)
+    print(result)
+
